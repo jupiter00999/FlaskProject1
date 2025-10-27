@@ -8,7 +8,11 @@
 <body>
     <form action="/api/login" method="post">
         <div id="msg">
-            <span>登录</span>
+            {% for msg in get_flashed_messages() %}
+                <span>{{ msg }}</span>
+            {% endfor %}
+            
+
         </div>
       <p>
         <span>账号：</span>
