@@ -11,7 +11,7 @@ def appi_login():
     password = request.form['pwd']
 
     # 2.访问数据库
-    user = user_c.get_user_by_username(username, password)
+    user = user_c.get_user_by_username_pwd(username, password)
     # 3.验证
     # 4.返回结果
     if user is None:
