@@ -2,7 +2,7 @@ import flask
 
 from routes import app,login_manager
 from flask import redirect, request, flash, session
-import controllers.uer_controller   as user_c
+import controllers.user_controller   as user_c
 from flask_login import login_user
 @app.route('/api/login', methods=['POST'])
 def appi_login():
