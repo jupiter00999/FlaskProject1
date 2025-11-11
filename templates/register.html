@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网易邮箱注册</title>
     <link rel="stylesheet" href="../css/lab2.css">
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/isFunction.js"></script>
+    <script src="../js/lab2.js"></script>
+
+
 </head>
 <body>
 
@@ -18,12 +24,12 @@
                 <span>以字母开头，支持字母、数字组合</span>
             </div>
 
-            <div id="form_box" id = "userForm">
-                <form action="#">
+            <div id="form_box" >
+                <form action="/pai/register" id = "userForm" method="post">
 
                     <div class="item">
 
-                        <input type="text" placeholder="邮箱地址" id="username" class="input_item">
+                        <input type="text" name="username" placeholder="邮箱地址" id="username" class="input_item">
 
                         <div class="tip"></div>
 
@@ -33,7 +39,7 @@
 
                     <div class="item">
 
-                        <input type="password" placeholder="密码" id="password" class="input_item">
+                        <input type="password" name="pwd" placeholder="密码" id="password" class="input_item">
                         <div class="tip"></div>
 
                         <!-- <div id=""></div> -->
@@ -43,7 +49,7 @@
 
                     <div class="item">
 
-                        <input type="text" placeholder="手机号码" id="tel" class="input_item">
+                        <input type="text" name="tel" placeholder="手机号码" id="tel" class="input_item">
                         <div class="tip"></div>
 
                         
@@ -52,7 +58,7 @@
                     <div class="service">
 
                         <input type="checkbox" id="service">
-                        <label >
+                        <label for="service">
                             同意
                             <a href="#">《服务条款》</a>、
                             <a href="#">《服务条款》</a>
@@ -66,12 +72,6 @@
 
         </div>
 
-        
     </div>
-
-
-    <script src="/lab2/js/jquery-3.3.1.min.js"></script>
-    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <script src="/lab2/js/lab2.js"></script>
 </body>
 </html>
